@@ -29,7 +29,8 @@ class App extends React.Component {
         <label>Text:</label> <br />
         <textarea rows="5" onChange={this.handleTextChange}></textarea> <br />
         <input type="button" id="submit" value="Submit" onClick={this.handleSubmitButton} /> <br /> <br />
-        <div id="json">Copy this:<br/>{JSON.stringify(this.state.elements)}</div>
+        <div id="json">Copy this:<br/>
+        {JSON.stringify(this.state.elements)}</div>
       </div>
     );
   }
@@ -65,7 +66,6 @@ class App extends React.Component {
     this.setState(state => ({
       type: 'text',
       nameDisabled: false,
-      name: '',
       text: ''
     }));
   }
